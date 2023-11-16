@@ -1,0 +1,49 @@
+#main {
+  text-align: center;
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+#welcome-prompt {
+  text-align: center;
+}
+
+.container {
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.inner-container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+#editor {
+  border: 1px solid gray;
+}
+
+#input:focus {
+  outline: none;
+}
+
+#input {
+  border: 0;
+}
+
+#send-note-btn {
+  cursor: pointer;
+  width: 20%;
+}
+
+#send-note-container {
+  text-align: right;
+}
+
+#notes > li {
+  list-style-type: none;
+}
