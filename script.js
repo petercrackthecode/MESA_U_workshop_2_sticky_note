@@ -18,6 +18,35 @@ function createNote() {
   const noteContent = inputElement.value;
   inputElement.value = "";
 
+  const newNote = {
+    id: notes.length + 1,
+    content: noteContent,
+  };
+
+  renderNoteToList(newNote);
+}
+
+function renderNoteToList(note) {
+  const allNotes = document.getElementById("notes");
+
+  const noteElement = document.createElement("li");  //attach the <li> tag onto the element
+  noteElement.classList.add("note"); //attach a class name onto the HTML element
+
+  const contentParagraph = document.createElement("p");
+  contentParagraph.textContent = note.content;
+
+  const timestampParagraph = document.createElement("p");
+
+  noteElement.appendChild(contentParagraph);
+
+  allNotes.appendChild(noteElement);
+}
+
+/*function createNote() {
+  const inputElement = document.getElementById("input");
+  const noteContent = inputElement.value;
+  inputElement.value = "";
+
   if (noteContent !== '') {
     const newNote = {
       id: notes.length + 1,
@@ -25,7 +54,7 @@ function createNote() {
     };
 
     notes.push(newNote);
-    /*saveNotesToStorage(); */
+    saveNotesToStorage();
     renderNotes();
   }
 }
@@ -43,4 +72,4 @@ function renderNotes() {
     `;
     notesContainer.appendChild(noteElement);
   });
-}
+}*/
