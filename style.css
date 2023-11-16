@@ -2,6 +2,11 @@
   text-align: center;
   padding-left: 15vw;
   padding-right: 15vw;
+  gap: 20px;
+}
+
+.page-divider {
+  width: 100%;
 }
 
 #welcome-prompt {
@@ -49,7 +54,8 @@
 
 #send-note-btn {
   cursor: pointer;
-  width: 20%;
+  border-radius: 50%;
+  padding: 5px;
 }
 
 #send-note-container {
@@ -68,6 +74,6 @@
 #notes > li {
   list-style-type: none;
   text-align: left;
-
+  margin-bottom: 20px;
 }
 

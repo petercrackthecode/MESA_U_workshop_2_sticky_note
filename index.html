@@ -7,7 +7,7 @@
     <script src="./script.js"></script>
   </head>
   <body>
-    <div id="main" class="container">
+    <div id="main" class="container col">
       <div id="welcome-prompt" class="container">
         <h2>What's on your mind?</h2>
       </div>
@@ -15,11 +15,13 @@
         <div id="editor" class="container inner-container col">
           <textarea name="note-input" id="input"></textarea>
           <div id="send-note-container">
-            <button id="send-note-btn" onclick="sendNote()">Submit</button>
+            <button id="send-note-btn" onclick="sendNote()">
+              <img src="./icon _arrow right.png" />
+            </button>
           </div>
         </div>
       </section>
-      <hr />
+      <hr class="page-divider" />
       <section class="row flex-center">
         <div id="notes-group" class="inner-container">
           <div id="notes-header" class="row">
