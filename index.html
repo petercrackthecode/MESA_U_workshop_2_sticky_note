@@ -11,17 +11,24 @@
       <div id="welcome-prompt" class="container">
         <h2>What's on your mind?</h2>
       </div>
-      <div id="editor" class="container inner-container col">
-        <textarea name="note-input" id="input" cols="30" rows="10"></textarea>
-        <div id="send-note-container">
-          <button id="send-note-btn" onclick="sendNote()">Submit</button>
+      <section class="row flex-center">
+        <div id="editor" class="container inner-container col">
+          <textarea name="note-input" id="input"></textarea>
+          <div id="send-note-container">
+            <button id="send-note-btn" onclick="sendNote()">Submit</button>
+          </div>
         </div>
-      </div>
+      </section>
       <hr />
-      <div id="notes-group inner-container">
-        <div><h2>Note</h2></div>
-        <ul id="notes"></ul>
-      </div>
+      <section class="row flex-center">
+        <div id="notes-group" class="inner-container">
+          <div id="notes-header" class="row">
+            <img src="note_icon.png" width="40" height="40" />
+            <h2>Note</h2>
+          </div>
+          <ul id="notes"></ul>
+        </div>
+      </section>
     </div>
   </body>
 </html>
